@@ -41,8 +41,7 @@ informative.
 **4. Hyperparameter tuning**
 GridSearchCV with 5-fold cross-validation on training data only.
 Parameters searched: n_estimators (50/100/200), max_depth (None/10/20),
-min_samples_leaf (1/2/4). Test set was not touched during tuning —
-only used once for final evaluation, maintaining a clean ML workflow.
+min_samples_leaf (1/2/4).
 
 **5. Evaluation metrics**
 Two metrics reported per NASA benchmark protocol:
@@ -92,7 +91,6 @@ nasa-cmapss-rul/
 │   └── visualize.py    # All output plots
 ├── outputs/            # Generated plots
 ├── main.py             # Pipeline entry point
-├── requirements.txt
 └── README.md
 ```
 
@@ -106,7 +104,6 @@ StandardScaler), Matplotlib
 ```bash
 git clone https://github.com/KatyalJatin28/Remaining_Useful_Life_Prediction-
 cd nasa-cmapss-rul-prediction
-pip install -r requirements.txt
 ```
 
 Download dataset from the NASA Prognostics Data Repository and place
